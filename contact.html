@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Me</title>
   <style>
+    /* Added flexbox layout for footer fix */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
       background-color: #000000; /* Pure black background */
       color: #eee;
       line-height: 1.6;
@@ -59,6 +66,7 @@
       max-width: 600px;
       margin: auto;
       padding: 2rem 1rem;
+      flex-grow: 1; /* Added to push footer down */
     }
 
     .card {
@@ -133,7 +141,7 @@
     <section class="card fade-in">
       <p>Email: <a href="mailto:luke.ballinger@outlook.com" class="contact-link">luke.ballinger@outlook.com</a></p>
       <p>Phone: <a href="tel:+16138685339" class="contact-link">+1 (613) 868-5339</a></p>
-      <p>LinkedIn: <a href="www.linkedin.com/in/lukeballinger0" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/lukeballinger0</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lukeballinger0" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/lukeballinger0</a></p>
     </section>
   </main>
 
@@ -151,7 +159,3 @@
   </script>
 </body>
 </html>
-
-
-
-
